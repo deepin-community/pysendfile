@@ -1,0 +1,103 @@
+pysendfile (2.0.1-4) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Sandro Tosi ]
+  * Use the new Debian Python Team contact name and address
+
+  [ Boyuan Yang ]
+  * Drop manual -dbg package. (Closes: #994340)
+  * Bump Standards-Version to 4.6.0.
+  * Bump debhelper compat to v13.
+  * Use Rules-Requires-Root: no.
+  * Add build-dep on python3-setuptools for proper .egg-info dir.
+
+ -- Boyuan Yang <byang@debian.org>  Wed, 27 Oct 2021 15:56:23 -0400
+
+pysendfile (2.0.1-3) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Sandro Tosi ]
+  * Drop python2 support; Closes: #937532
+
+ -- Sandro Tosi <morph@debian.org>  Sat, 14 Dec 2019 10:11:59 -0500
+
+pysendfile (2.0.1-2) unstable; urgency=medium
+
+  [ W. Martin Borgert ]
+  * Team upload
+  * set DPMT as uploader
+  * bump dh compat level
+  * set dependency right (Closes: #906101)
+
+  [ Ondřej Nový ]
+  * d/copyright: Use https protocol in Format field
+  * d/control: Deprecating priority extra as per policy 4.0.1
+  * d/control: Set Vcs-* to salsa.debian.org
+  * Convert git repository from git-dpm to gbp layout
+
+ -- W. Martin Borgert <debacle@debian.org>  Fri, 07 Sep 2018 08:24:58 +0000
+
+pysendfile (2.0.1-1) unstable; urgency=low
+
+  * Create a git repository in collab-maint, using git-dpm
+  * Add homepage and VCS information (Closes: #805140)
+  * Add myself to Uploaders - feel free to revert
+  * Add support for Python 3 (Closes: #608287)
+  * New upstream version (Closes: #805139)
+  * Fixed lintians
+
+ -- W. Martin Borgert <debacle@debian.org>  Sun, 22 Nov 2015 10:23:17 +0000
+
+pysendfile (2.0.0-6.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Build using dh-python. Closes: #786324.
+
+ -- Matthias Klose <doko@debian.org>  Tue, 18 Aug 2015 17:46:41 +0200
+
+pysendfile (2.0.0-6) unstable; urgency=low
+
+  * Added python-sendfile-dbg (Closes: #664059)
+  * Fixed typo in copyright URL (Closes: #662668)
+
+ -- Ghe Rivero <ghe@debian.org>  Wed, 04 Jul 2012 14:37:00 +0200
+
+pysendfile (2.0.0-5) unstable; urgency=low
+
+  * Change binary package name from pysendfile to python-sendfile
+
+ -- Ghe Rivero <ghe@debian.org>  Wed, 07 Mar 2012 13:01:58 +0100
+
+pysendfile (2.0.0-4) unstable; urgency=low
+
+  * Fixed typo in copyright URL (Closes: 662668)
+    - Also updated to new approved format.
+
+ -- Ghe Rivero <ghe@debian.org>  Mon, 05 Mar 2012 16:45:42 +0100
+
+pysendfile (2.0.0-3) unstable; urgency=low
+
+  * Conflicts with python-sendfile (Closes: #662644)
+
+ -- Ghe Rivero <ghe@debian.org>  Mon, 05 Mar 2012 16:30:24 +0100
+
+pysendfile (2.0.0-2) unstable; urgency=low
+
+  * Replaces python-sendfile (Closes: #662120)
+  * Build-depends on python-all-dev (Closes: #662096)
+  * Depends on python (Closes: #662135)
+
+ -- Ghe Rivero <ghe@debian.org>  Mon, 05 Mar 2012 08:11:29 +0100
+
+pysendfile (2.0.0-1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Ghe Rivero <ghe@debian.org>  Thu, 01 Mar 2012 08:52:44 +0100

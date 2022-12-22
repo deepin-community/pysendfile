@@ -1,0 +1,27 @@
+Source: pysendfile
+Section: python
+Priority: optional
+Maintainer: Ghe Rivero <ghe@debian.org>
+Uploaders: Debian Python Team <team+python@tracker.debian.org>
+Standards-Version: 4.6.0
+Build-Depends:
+ python3-all-dev,
+ python3-setuptools,
+ dh-sequence-python3,
+ debhelper-compat (= 13)
+Rules-Requires-Root: no
+Vcs-Browser: https://salsa.debian.org/python-team/packages/pysendfile
+Vcs-Git: https://salsa.debian.org/python-team/packages/pysendfile.git
+Homepage: https://github.com/giampaolo/pysendfile
+
+Package: python3-sendfile
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ ${python3:Depends}
+Description: Python interface to sendfile(2)
+ Python library which provides a "zero-copy" way of copying data from one
+ file descriptor to another (a socket). The phrase "zero-copy" refers to
+ the fact that all of the copying of data between the two descriptors is
+ done entirely by the kernel, with no copying of data into userspace buffers.
+ This is particularly useful when sending a file over a socket (e.g. FTP).
